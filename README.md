@@ -46,7 +46,6 @@ Some tips to check in `Vagrantfile` before fire up vagrant for your real develop
 ## A Few Details
 
 + If you're needing a password (for anything - including mysql, it should be `vagrant`)
-+ Change Vagrant file for edit the domain and the IP before `vagrant up`
 + It's a copy of [vagrantpress](https://github.com/chad-thompson/vagrantpress) I've commented out some puppet modules that can be usefull some times.
 
 
