@@ -11,7 +11,7 @@ I don't think is the best vagrant machine out there, but its good for me, feel f
 + Mysql
 + Php
 + Phpmyadmin
-+ Git
++ Postfix (for sending e-mails)
 + Basic configuration for Grunt and Compass
 
 # Prerequisites
@@ -36,6 +36,12 @@ The procedure for starting up a working LAMP server and PHP development envirome
 You can access phpMyAdmin:
 
 `http://vagrantbasic.dev/phpmyadmin/` with username `root`, password `vagrant`.
+
+Some tips to check in `Vagrantfile` before fire up vagrant for your real development environment:
+
++ `[Line 12]` check if `"192.168.50.4"` is good for your network (even for other vagrantbasic machines)
++ `[Line 11 and 13]` change the hostname in whatever suits for your project
++ `[Line 26]` if you need more than 512MB of RAM add the following line `vm.memory = 1024` for 1GB ([more info](http://docs.vagrantup.com/v2/virtualbox/configuration.html))
 
 ## A Few Details
 
